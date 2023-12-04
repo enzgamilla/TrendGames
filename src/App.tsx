@@ -5,20 +5,14 @@ import NavbarHeader from "./components/NavbarHeader";
 function App() {
   return (
     <Grid templateAreas={breakpoints}>
-      <GridItem area={"header"}>
+      <GridItem area={"header"} w="100%">
         <NavbarHeader titleText="TrendGames" />
       </GridItem>
       <Show above="lg">
-        <GridItem bg={"pink.300"} area={"side-nav"}>
-          Side Navigation Bar
-        </GridItem>
+        <GridItem area={"side-nav"}>Side Navigation Bar</GridItem>
       </Show>
-      <GridItem bg={"green.300"} area={"main"}>
-        Main Body
-      </GridItem>
-      <GridItem bg={"blue.300"} area={"footer"}>
-        Footer
-      </GridItem>
+      <GridItem area={"main"}>Main Body</GridItem>
+      <GridItem area={"footer"}>Footer</GridItem>
     </Grid>
   );
 }

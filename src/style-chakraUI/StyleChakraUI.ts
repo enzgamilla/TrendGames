@@ -5,18 +5,20 @@ export const breakpoints = {
 
 //typography
 export const titleTextFontSize = {
-  base: "xl",
-  lg: "3xl",
+  base: "lg",
+  sm: "xl",
+  lg: "2xl",
 };
 
 export const textFontSize = {
-  base: "1.5rem",
-  lg: "2rem",
+  base: "xs",
+  sm: "sm",
+  lg: "md",
 };
 
 //icon-images size
 
 export const iconTitleSize = {
-  base: "3rem",
-  lg: "5rem",
+  base: "2rem",
+  lg: "3rem",
 };
