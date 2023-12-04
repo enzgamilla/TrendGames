@@ -1,5 +1,5 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
-import { breakpoints } from "./style/StyleChakraUI";
+import { breakpoints } from "./style-chakraUI/StyleChakraUI";
 import NavbarHeader from "./components/NavbarHeader";
 
 function App() {

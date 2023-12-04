@@ -1,5 +1,8 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
-import { titleTextFontSize, iconTitleSize } from "../style/StyleChakraUI";
+import {
+  titleTextFontSize,
+  iconTitleSize,
+} from "../style-chakraUI/StyleChakraUI";
 import logo from "../assets/logo.webp";
 
 interface Props {
