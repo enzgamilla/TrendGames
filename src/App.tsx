@@ -1,21 +1,22 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import { breakpoints } from "./style/StyleChakraUI";
+import NavbarHeader from "./components/NavbarHeader";
 
 function App() {
   return (
     <Grid templateAreas={breakpoints}>
-      <GridItem pl={"2"} bg={"orange.300"} area={"header"}>
-        Header
+      <GridItem area={"header"}>
+        <NavbarHeader logoSize="4rem" titleText="TrendGames" />
       </GridItem>
       <Show above="lg">
-        <GridItem pl={"2"} bg={"pink.300"} area={"side-nav"}>
+        <GridItem bg={"pink.300"} area={"side-nav"}>
           Side Navigation Bar
         </GridItem>
       </Show>
-      <GridItem pl={"2"} bg={"green.300"} area={"main"}>
+      <GridItem bg={"green.300"} area={"main"}>
         Main Body
       </GridItem>
-      <GridItem pl={"2"} bg={"blue.300"} area={"footer"}>
+      <GridItem bg={"blue.300"} area={"footer"}>
         Footer
       </GridItem>
     </Grid>
