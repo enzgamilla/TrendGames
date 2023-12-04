@@ -6,7 +6,7 @@ function App() {
   return (
     <Grid templateAreas={breakpoints}>
       <GridItem area={"header"}>
-        <NavbarHeader logoSize="4rem" titleText="TrendGames" />
+        <NavbarHeader titleText="TrendGames" />
       </GridItem>
       <Show above="lg">
         <GridItem bg={"pink.300"} area={"side-nav"}>
