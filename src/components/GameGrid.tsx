@@ -3,6 +3,7 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import { GameContrainerGrid } from "../style-chakraUI/StyleChakraUI";
 import GameCardSkeleton from "./GameCardSkeleton";
+import GameCardContainer from "./GameCardContainer";
 
 const GameGrid = () => {
   const { error, games, isLoading } = useGames();
@@ -13,9 +14,15 @@ const GameGrid = () => {
       {error && <Text>{error}</Text>}
       <SimpleGrid columns={GameContrainerGrid} padding="10px" spacing={10}>
         {isLoading &&
-          skeletons.map((skeleton) => <GameCardSkeleton key={skeleton} />)}
+          skeletons.map((skeleton) => (
+            <GameCardContainer>
+              <GameCardSkeleton key={skeleton} />
+            </GameCardContainer>
+          ))}
         {games.map((gameList) => (
-          <GameCard key={gameList.id} game={gameList} />
+          <GameCardContainer>
+            <GameCard key={gameList.id} game={gameList} />
+          </GameCardContainer>
         ))}
       </SimpleGrid>
     </>

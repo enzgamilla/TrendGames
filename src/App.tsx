@@ -15,7 +15,6 @@ function App() {
       <GridItem area={"main"}>
         <GameGrid />
       </GridItem>
-      <GridItem area={"footer"}>Footer</GridItem>
     </Grid>
   );
 }
