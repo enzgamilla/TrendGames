@@ -10,11 +10,11 @@ function App() {
         <NavbarHeader titleText="TrendGames" />
       </GridItem>
       <Show above="lg">
-        <GridItem area={"side-nav"}>
-          <GameGrid />
-        </GridItem>
+        <GridItem area={"side-nav"}>SideBar</GridItem>
       </Show>
-      <GridItem area={"main"}>Main</GridItem>
+      <GridItem area={"main"}>
+        <GameGrid />
+      </GridItem>
       <GridItem area={"footer"}>Footer</GridItem>
     </Grid>
   );

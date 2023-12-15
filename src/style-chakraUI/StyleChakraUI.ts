@@ -5,7 +5,7 @@ export const breakpoints = {
 
 //typography
 export const titleTextFontSize = {
-  base: "lg",
+  base: "sm",
   sm: "xl",
   lg: "2xl",
 };
@@ -21,4 +21,11 @@ export const textFontSize = {
 export const iconTitleSize = {
   base: "2rem",
   lg: "3rem",
+};
+
+export const GameContrainerGrid = {
+  sm: 1,
+  md: 2,
+  lg: 3,
+  xl: 5,
 };
