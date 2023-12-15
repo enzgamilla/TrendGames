@@ -3,6 +3,11 @@ export const breakpoints = {
   lg: `"header header" "side-nav main" "side-nav footer"`,
 };
 
+export const SideAndMainGridSize = {
+  base: "1fr",
+  lg: "200px 1fr",
+};
+
 //typography
 export const titleTextFontSize = {
   base: "sm",

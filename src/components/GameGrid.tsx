@@ -12,7 +12,7 @@ const GameGrid = () => {
   return (
     <>
       {error && <Text>{error}</Text>}
-      <SimpleGrid columns={GameContrainerGrid} padding="10px" spacing={10}>
+      <SimpleGrid columns={GameContrainerGrid} padding="10px" spacing={3}>
         {isLoading &&
           skeletons.map((skeleton) => (
             <GameCardContainer key={skeleton}>
