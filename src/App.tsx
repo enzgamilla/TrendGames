@@ -14,7 +14,7 @@ function App() {
           <GameGrid />
         </GridItem>
       </Show>
-      <GridItem area={"main"}></GridItem>
+      <GridItem area={"main"}>Main</GridItem>
       <GridItem area={"footer"}>Footer</GridItem>
     </Grid>
   );
