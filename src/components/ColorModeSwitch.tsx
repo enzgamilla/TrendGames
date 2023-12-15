@@ -9,7 +9,11 @@ const ColorModeSwitch = () => {
       <Text fontSize={textFontSize} as="b">
         {colorMode === "dark" ? "Put in Light Mode:" : "Put in Dark Mode:"}
       </Text>
-      <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
+      <Switch
+        colorScheme="green"
+        isChecked={colorMode === "dark"}
+        onChange={toggleColorMode}
+      />
     </HStack>
   );
 };

@@ -1,6 +1,7 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import { breakpoints } from "./style-chakraUI/StyleChakraUI";
 import NavbarHeader from "./components/NavbarHeader";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   return (
@@ -9,9 +10,11 @@ function App() {
         <NavbarHeader titleText="TrendGames" />
       </GridItem>
       <Show above="lg">
-        <GridItem area={"side-nav"}>Side Navigation Bar</GridItem>
+        <GridItem area={"side-nav"}>
+          <GameGrid />
+        </GridItem>
       </Show>
-      <GridItem area={"main"}>Main Body</GridItem>
+      <GridItem area={"main"}></GridItem>
       <GridItem area={"footer"}>Footer</GridItem>
     </Grid>
   );
