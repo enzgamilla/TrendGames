@@ -7,7 +7,7 @@ const ColorModeSwitch = () => {
   return (
     <HStack>
       <Text fontSize={textFontSize} as="b">
-        {colorMode === "dark" ? "Put in Light Mode:" : "Put in Dark Mode:"}
+        {colorMode === "dark" ? "Dark Mode:" : "Light Mode:"}
       </Text>
       <Switch
         colorScheme="green"
