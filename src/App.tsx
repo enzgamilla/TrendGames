@@ -17,6 +17,7 @@ export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
   sortOrder: string;
+  searchGame: string;
 }
 
 function App() {
@@ -36,7 +37,11 @@ function App() {
         </GridItem>
       </Show>
       <GridItem area={"main"}>
-        <SearchInput />
+        <SearchInput
+          searchGame={(searchGame) =>
+            setGameQuery({ ...gameQuery, searchGame })
+          }
+        />
         <HStack spacing={5} padding={2}>
           <PlatformSelector
             selectedPlatform={gameQuery.platform}
