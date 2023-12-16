@@ -14,7 +14,7 @@ const SearchInput = ({ searchGame }: Props) => {
   };
 
   return (
-    <Box padding={2}>
+    <Box marginBottom={5}>
       <InputGroup>
         <InputLeftElement children={<BsSearch />} />
         <Input
