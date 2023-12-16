@@ -5,7 +5,6 @@ import {
 } from "../style-chakraUI/StyleChakraUI";
 import logo from "../assets/logo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
-import SearchInput from "./SearchInput";
 
 interface Props {
   titleText: string;
@@ -14,11 +13,12 @@ interface Props {
 const NavbarHeader = ({ titleText }: Props) => {
   return (
     <HStack justifyContent="space-between" padding="10px">
-      <Image src={logo} boxSize={iconTitleSize} />
-      <Text fontSize={titleTextFontSize} as="b">
-        {titleText}
-      </Text>
-      <SearchInput />
+      <HStack>
+        <Image src={logo} boxSize={iconTitleSize} />
+        <Text fontSize={titleTextFontSize} as="b">
+          {titleText}
+        </Text>
+      </HStack>
       <ColorModeSwitch />
     </HStack>
   );
